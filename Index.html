@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photography Blog</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <h1 class="website-name">SnapByMe</h1>
+  </header>
+
+  <div class="filters">
+    <label for="search">Search:</label>
+    <input type="text" id="search" oninput="searchGallery()" placeholder="Search Photos">
+
+    <label for="category">Category:</label>
+    <select id="category" onchange="filterGallery()">
+      <option value="all">All</option>
+      <option value="pet">Pet</option>
+      <option value="scenery">Scenery</option>
+      <option value="food">Food</option>
+      <option value="portrait">Portrait</option>
+    </select>
+  </div>
+
+  <main>
+    <div class="gallery"></div>
+  </main>
+
+  <footer>
+    <div class="about-website">
+      <h2>About Website</h2>
+      <p>This website is a photography blog where I share my captured moments.</p>
+    </div>
+
+    <div class="about-person">
+      <h2>About Me</h2>
+      <p>I am a passionate photographer who loves to explore the world through my camera lens. Photography is my way of expressing creativity and capturing beautiful memories.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
